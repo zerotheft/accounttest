@@ -13,6 +13,22 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 Save it to a specific rsa file like `id_rsa_anonacct`
 
+### Add the key to your anonymous GitHub account
+
+Go to GitHub and log in as your anonymous account.
+
+Go to account Settings, and choose `SSH and GPG keys`.
+
+Get your anonymous public key into the clipboard:
+
+```
+pbcopy < ~/.ssh/id_rsa_anonacct.pub
+```
+
+(or `cat ~/.ssh/id_rsa_anonacct.pub` and then highlight and copy)
+
+And then copy it into a new SSH key for your GitHub account and save it.
+
 ### Create a new SSH config for the anonymous git account
 
 Edit your ssh config file (typically `~/.ssh/config`) to include a block for your anonymous github account:
@@ -39,6 +55,8 @@ This needs to be edited to replace the `github.com` to the anonymous host `githu
 ```
 git clone git@github.com-anonacct:zerotheft/accounttest.git
 ```
+
+(If you set up your SSH key properly this will work.  If not fix the SSH key setup in GitHub.)
 
 ### Update your local repo's name and email
 
