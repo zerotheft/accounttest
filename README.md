@@ -3,7 +3,7 @@ This repo is here specifically for invited team members to test proper multi-acc
 
 ## How to Set Up
 
-(Info taken from [this gist](https://gist.github.com/Jonalogy/54091c98946cfe4f8cdab2bea79430f9)
+Info taken from [this gist](https://gist.github.com/Jonalogy/54091c98946cfe4f8cdab2bea79430f9)
 
 ### Create a new ssh key for your anonymous account
 
